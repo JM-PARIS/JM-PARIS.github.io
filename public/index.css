@@ -1,0 +1,38 @@
+.intro {
+    text-align: left;
+    margin-top: 32px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FFE500;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.intro p a {
+    color: #7D1DD3;
+    text-decoration: underline;
+}
+
+.intro p a:hover {
+    color: #FFE500;
+}
+
+.contact {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FFE500;
+}
