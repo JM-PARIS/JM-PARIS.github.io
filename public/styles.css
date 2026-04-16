@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'helvetica', sans-serif;
     margin: 0;
     padding: 0;
     background: rgb(10, 2, 17);
@@ -17,8 +17,15 @@ header {
 }
 
 header h1 {
+    font-family: 'georgia', serif;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 2rem;
+    color: #FFE500;
+}
+
+h2 {
+    font-family: 'Garamond', serif;
     font-size: 2rem;
     color: #FFE500;
 }
