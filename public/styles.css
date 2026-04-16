@@ -1,6 +1,12 @@
 /* General Styles */
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://github.com/JulietaUla/Montserrat/blob/master/fonts/otf/Montserrat-Regular.otf");
+}
+
+
 body {
-    font-family: 'helvetica', sans-serif;
+    font-family: 'Montserrat';
     margin: 0;
     padding: 0;
     background: #ffffff;
@@ -237,8 +243,8 @@ main {
 }
 
 footer {
-    background-color: #003532;
-    padding: 10px;
+    background-color: #006f6b;
+    padding: 1px;
     text-align: center;
     color: rgba(180, 180, 180);
 }
