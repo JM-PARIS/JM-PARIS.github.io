@@ -6,14 +6,13 @@
 .intro h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #FFE500;
+;
     text-align: left;
 }
 
 .intro p {
     font-size: 1.2rem;
-    line-height: 1.6;
-    color: #fff;
+    color: #00000;
 }
 
 .intro p a {
@@ -34,5 +33,4 @@
 .contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #FFE500;
 }
