@@ -1,12 +1,42 @@
 /* General Styles */
-@font-face {
-  font-family: "Montserrat";
-  src: url("https://github.com/JulietaUla/Montserrat/blob/master/fonts/otf/Montserrat-Regular.otf");
+@font-face {    
+    font-family: "Montserrat";
+    src: url("/font/Montserrat-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {    
+    font-family: "Montserrat";
+    src: url("/font/Montserrat-Italic.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {    
+    font-family: "Montserrat";
+    src: url("/font/Montserrat-SemiBold.otf");
+    font-weight: bold;
+    font-style: normal;
 }
 
 
+@font-face {    
+    font-family: "Anokha";
+    src: url("/font/Anokha.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {    
+    font-family: "Anokha";
+    src: url("/font/Anokha-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     margin: 0;
     padding: 0;
     background: #ffffff;
@@ -23,7 +53,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Arial', serif;
+    font-family: 'Montserrat';
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 2rem;
@@ -31,7 +61,7 @@ header h1 {
 }
 
 h2 {
-    font-family: 'Arial', serif;
+    font-family: 'Anokha';
     font-size: 2rem;
     color: #cb0073;
 }
@@ -62,6 +92,8 @@ a:hover {
 }
 
 .nav-links a {
+    font-family: "Anokha";
+    font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
     padding: 10px 15px;
@@ -243,9 +275,11 @@ main {
 }
 
 footer {
+    font-family: "Montserrat";
+    font-size: 0.75rem;
     background-color: #006f6b;
     padding: 1px;
     text-align: center;
-    color: rgba(180, 180, 180);
+    color: rgb(255, 255, 255, 0.5);
 }
 
