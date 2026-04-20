@@ -6,7 +6,6 @@
 .intro h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-;
     text-align: left;
 }
 
@@ -15,14 +14,14 @@
     color: #00000;
 }
 
-.intro p a {
+/* .intro p a {
     color: #7D1DD3;
     text-decoration: underline;
 }
 
 .intro p a:hover {
     color: #FFE500;
-}
+} */
 
 .contact {
     margin-top: 50px;
@@ -52,5 +51,26 @@
 .article_container {
     padding-right: 20px;
     padding-left: 20px;
+}
+
+.text-section {
+    text-align: left;
+    margin-top: 32px;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.text-section p {
+    max-width: 750px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.2rem;
+    color: #00000;
 }
 
