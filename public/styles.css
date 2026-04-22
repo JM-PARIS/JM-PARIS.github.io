@@ -248,7 +248,7 @@ a:hover {
 }
 
 /* Specific fix for mobile overlapping */
-@media (max-width: 768px) {
+@media (max-width: 50px) {
     .nav-links li {
         width: 100%;
     }
