@@ -168,8 +168,6 @@ a:hover {
     margin: 0; /* Remove default margin */
 }
 
-
-
 .roundrect {
 border-radius: 15px;
 }
@@ -242,7 +240,7 @@ border-radius: 15px;
 
 /* Responsive Styles */ 
 /* change max_witdh for transition between button and horizontal menu */
-@media (max-width: 360px) {
+@media (max-width: 768px) {
     .menu-toggle {
         display: block;
         text-align: center;
@@ -321,7 +319,7 @@ border-radius: 15px;
 }
 
 /* Specific fix for mobile overlapping */
-@media (max-width: 50px) {
+@media (max-width: 768px) {
     .nav-links li {
         width: 100%;
     }
