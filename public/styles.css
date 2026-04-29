@@ -172,81 +172,52 @@ a:hover {
 border-radius: 15px;
 }
 
-.dropbtn::after {
-    content: 'â˜°';
-    padding-left: 5px;
-    color: #7D1DD3;
+.dropbtn {
+  font-family: "Anokha";
+  font-weight: bold;
+  background-color: #00a49e;
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  width: 100%;
 }
 
 .dropdown {
-    position: relative;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    max-width: 160px;
-    z-index: 1;
-    top: 100%;
-    left: 0;
-}
-
-.dropdown:hover > .dropdown-content {
-    display: block; /* Display the first-level dropdown */
-}
-
-/* Ensure submenus are only visible when hovering directly over the submenu's parent */
-.dropdown-content .dropdown-submenu:hover > .dropdown-content {
-    display: block; /* Only show the submenu when hovering over the submenu parent */
-}
-
-.dropdown-content .dropdown-submenu > .dropdown-content {
-    display: none; /* Hide submenu until specifically hovered over */
-}
-
-.dropdown-submenu {
-    position: relative;
-}
-
-.dropdown-submenu .dropdown-content {
-    top: 0;
-    left: 100%;
+  display: none;
+  position: absolute;
+  background-color: #00a49e11;
+  min-width: 160px;
+  z-index: 1;
 }
 
 .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: #575757;
-}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block}
+
+.dropdown:hover .dropbtn {background-color: #00a49e99 ;}
 
 /* Hamburger Menu */
-.menu-toggle {
+.dropdown {
     display: none;
-    font-size: 24px;
-    color: #fff;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 12px;
-    right: 42%; /* Positioned on the right */
+
 }
 
 /* Responsive Styles */ 
 /* change max_witdh for transition between button and horizontal menu */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-        text-align: center;
-        width: 40px;
-        height: 40px;
-    }
+@media (max-width: 500px) {
 
     nav {
         position: absolute;
@@ -254,9 +225,8 @@ border-radius: 15px;
         left: 0;
         width: 250px;
         height: 100%;
-        background-color: #333;
         transform: translateX(-100%);
-        transition: transform 0.3s ease;
+        transition: transform 0s ease;
         z-index: 1000;
     }
 
@@ -290,55 +260,20 @@ border-radius: 15px;
         text-align: left;
     }
 
-    .dropdown-submenu .dropdown-content {
-        position: static;
-    }
-
-    .dropdown-content a {
-        padding: 10px 15px; /* Ensure padding within the submenu items */
-        width: calc(100% - 30px); /* Adjust width to fit within the nav bar */
-    }
-
-    /* Ensure submenus do not overflow on the right */
-    .dropdown-submenu .dropdown-content {
-        left: auto;
-        right: 0;
-    }
-
     /* Darken main content when nav is active */
     main.active {
         filter: brightness(0.5);
         transition: filter 0.3s ease;
     }
 
-    .menu-toggle {
+    .dropdown {
         display: block;
         text-align: center;
         width: 100%;
     }
 }
 
-/* Specific fix for mobile overlapping */
-@media (max-width: 768px) {
-    .nav-links li {
-        width: 100%;
-    }
 
-    .dropdown-content a {
-        padding: 10px 0;
-        display: block;
-        width: calc(100% - 30px); /* Ensure submenu items fit within the navbar */
-    }
-
-    .dropdown-content a:hover {
-        background-color: #7D1DD3;
-    }
-
-    .dropdown:hover .dropdown-content,
-    .dropdown-submenu:hover .dropdown-content {
-        display: block;
-    }
-}
 
 main {
     flex-grow: 1;
