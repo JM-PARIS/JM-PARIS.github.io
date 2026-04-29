@@ -191,7 +191,7 @@ border-radius: 15px;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #00a49e11;
+  background-color: #E6F6F5;
   min-width: 160px;
   z-index: 1000;
 }
@@ -206,7 +206,9 @@ border-radius: 15px;
 
 .dropdown-content a:hover {background-color: #fff}
 
-.dropdown:hover .dropdown-content {display: block}
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute}
 
 .dropdown:hover .dropbtn {background-color: #00a49e99 ;}
 
