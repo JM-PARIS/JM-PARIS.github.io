@@ -210,7 +210,11 @@ border-radius: 15px;
     display: block;
     position: absolute}
 
+
 .dropdown:hover .dropbtn {background-color: #00a49e99 ;}
+
+
+
 
 /* Make dropdown button disappear when screen is large enough */
 .dropdown {
@@ -272,6 +276,13 @@ border-radius: 15px;
         text-align: center;
         width: 100%;
     }
+
+    .dropdown:active .dropdown-content {
+    display: block;
+    position: absolute}
+
+
+    .dropdown:active .dropbtn {background-color: #00a49e99 ;}
 }
 
 
