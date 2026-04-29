@@ -158,7 +158,7 @@ a:hover {
 
 .news-table td h3 {
     vertical-align: top; /* Align content at the top of the cells */
-    padding: 0 px; /* Add some padding for better readability */
+    padding: 0 5 px; /* Add some padding for better readability */
     margin: 0; /* Remove default margin */
 }
 
@@ -242,7 +242,7 @@ border-radius: 15px;
 
 /* Responsive Styles */ 
 /* change max_witdh for transition between button and horizontal menu */
-@media (max-width: 68px) {
+@media (max-width: 360px) {
     .menu-toggle {
         display: block;
         text-align: center;
