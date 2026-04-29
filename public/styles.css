@@ -116,7 +116,7 @@ a:hover {
 }
 
 .scroll-block ul {
-    padding-left: ; /* Remove left padding for the list */
+    padding-left: 0 px; /* Remove left padding for the list */
 }
 
 .scroll-block ul li {
@@ -209,7 +209,7 @@ border-radius: 15px;
 
 .dropdown:hover .dropbtn {background-color: #00a49e99 ;}
 
-/* Hamburger Menu */
+/* Make dropdown button disappear when screen is large enough */
 .dropdown {
     display: none;
 
