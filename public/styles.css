@@ -91,16 +91,6 @@ a:hover {
 ;
 }
 
-.nav-links a {
-    font-family: "Anokha";
-    font-size: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background 0.3s ease, color 0.3s ease;
-    font-weight: bold;
-}
-
 
 /* Scroll block styles */
 .scroll-block {
@@ -172,6 +162,16 @@ a:hover {
 border-radius: 15px;
 }
 
+.nav-links a {
+    font-family: "Anokha";
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
 .dropbtn {
   font-family: "Anokha";
   font-weight: bold;
@@ -181,11 +181,11 @@ border-radius: 15px;
   font-size: 1.5rem;
   border: none;
   width: 100%;
+  
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -193,7 +193,7 @@ border-radius: 15px;
   position: absolute;
   background-color: #00a49e11;
   min-width: 160px;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .dropdown-content a {
@@ -203,7 +203,8 @@ border-radius: 15px;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown-content a:hover {background-color: #fff}
 
 .dropdown:hover .dropdown-content {display: block}
 
@@ -211,9 +212,10 @@ border-radius: 15px;
 
 /* Make dropdown button disappear when screen is large enough */
 .dropdown {
+    position: relative;
     display: none;
-
 }
+
 
 /* Responsive Styles */ 
 /* change max_witdh for transition between button and horizontal menu */
@@ -221,13 +223,10 @@ border-radius: 15px;
 
     nav {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100%;
+        width: 100%;
         transform: translateX(-100%);
         transition: transform 0s ease;
-        z-index: 1000;
+        z-index: 100;
     }
 
     nav.active {
@@ -235,12 +234,12 @@ border-radius: 15px;
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-direction: row;
         display: flex;
         align-items: flex-start;
         padding: 0;
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity 0s ease;
     }
 
     .nav-links.active {
@@ -257,13 +256,13 @@ border-radius: 15px;
     .dropdown-content {
         position: static;
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
 
     /* Darken main content when nav is active */
     main.active {
         filter: brightness(0.5);
-        transition: filter 0.3s ease;
+        transition: filter 0s ease;
     }
 
     .dropdown {
