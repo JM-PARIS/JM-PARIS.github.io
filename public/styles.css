@@ -80,13 +80,11 @@ body {
   font-size: 1.2rem;
   font-family: "Anokha";
   font-weight: bold;
-  padding: 0 0;
   overflow: hidden;
   font-size: 1.5rem;
   border: none;
   width: 100%;
-  position : absolute
-  
+  position : absolute;
 }
 
 .header-menu li a {
@@ -201,8 +199,9 @@ body {
     clear: none;
     float: center;
     max-height: none;
-    
+    position: relative;
   }
+
   .header-menu .menu-icon {
     display: none;
   }
@@ -217,7 +216,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  
 }
 
   .header-menu li a:hover,
