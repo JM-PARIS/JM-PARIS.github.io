@@ -46,13 +46,18 @@ body {
     min-height: 100vh;
 }
 
-header {
+
+
+
+/* header */
+
+.header {
     background-color: #006f6b;
     padding: 10px;
     text-align: center;
 }
 
-header h1 {
+.header h1 {
     font-family: 'Montserrat';
     margin-top: 5px;
     margin-bottom: 5px;
@@ -60,25 +65,188 @@ header h1 {
     color: #FFFFFF;
 }
 
+.header-menu {
+  background-color: #00a49e;
+  width: 100%;
+  z-index: 3;
+  color:white;
+}
+
+.header-menu ul {
+  margin: 0;
+  list-style: none;
+  color: white;
+  background-color: #00a49e;
+  font-size: 1.2rem;
+  font-family: "Anokha";
+  font-weight: bold;
+  padding: 0 0;
+  overflow: hidden;
+  font-size: 1.5rem;
+  border: none;
+  width: 100%;
+  position : absolute
+  
+}
+
+.header-menu li a {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 1.2rem;
+  display: block;
+  background-color: #E6F6F5;
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.header-menu li a:hover,
+.header-menu .menu-btn:hover {background-color: white;   color: black}
+
+
+.header-menu .logo {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+   padding: 10px 20px;
+  text-decoration: none;
+  color:white;
+}
+
+/* menu */
+
+.header-menu .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header-menu .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: center;
+  padding: 28px 20px;
+  /* position: relative; */
+  user-select: none;
+}
+
+.header-menu .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header-menu .menu-icon .navicon:before,
+.header-menu .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header-menu .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header-menu .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header-menu .menu-btn {
+  display: none;
+}
+
+.header-menu .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header-menu .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header-menu .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header-menu .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+
+  .header-menu .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    clear: none;
+    float: center;
+    max-height: none;
+    
+  }
+  .header-menu .menu-icon {
+    display: none;
+  }
+
+  .header-menu li a {
+  font-family: "Anokha";
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: #00a49e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  
+}
+
+  .header-menu li a:hover,
+    .header-menu .menu-btn:hover {
+        color: white;
+        background-color: #00a49e;
+        font-size: 1.5rem;
+        font-family: "Anokha";
+        font-weight: bold;
+}
+
+
+}
+
+.dropdown {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px  #f4f4f4;
+  text-decoration: none;
+  color:white;
+}
+
+
+
+
 h2 {
     font-family: 'Anokha';
     font-size: 2.3rem;
     color: #cb0073;
-}
-
-nav {
-    background-color: #00a49e ;
-    position: relative;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 a {
@@ -162,129 +330,6 @@ a:hover {
 border-radius: 15px;
 }
 
-.nav-links a {
-    font-family: "Anokha";
-    font-size: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background 0.3s ease, color 0.3s ease;
-    font-weight: bold;
-}
-
-.dropbtn {
-  font-family: "Anokha";
-  font-weight: bold;
-  background-color: #00a49e;
-  color: white;
-  padding: 10px;
-  font-size: 1.5rem;
-  border: none;
-  width: 100%;
-  
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #E6F6F5;
-  min-width: 160px;
-  z-index: 1000;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-}
-
-
-.dropdown-content a:hover {background-color: #fff}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    position: absolute}
-
-
-.dropdown:hover .dropbtn {background-color: #00a49e99 ;}
-
-
-
-
-/* Make dropdown button disappear when screen is large enough */
-.dropdown {
-    position: relative;
-    display: none;
-}
-
-
-/* Responsive Styles */ 
-/* change max_witdh for transition between button and horizontal menu */
-@media (max-width: 500px) {
-
-    nav {
-        position: absolute;
-        width: 100%;
-        transform: translateX(-100%);
-        transition: transform 0s ease;
-        z-index: 100;
-    }
-
-    nav.active {
-        transform: translateX(0);
-    }
-
-    .nav-links {
-        flex-direction: row;
-        display: flex;
-        align-items: flex-start;
-        padding: 0;
-        opacity: 0;
-        transition: opacity 0s ease;
-    }
-
-    .nav-links.active {
-        opacity: 1;
-        padding-top: 50px;
-    }
-
-    .nav-links li {
-        width: 100%;
-        margin: 0;
-        padding: 15px 0; /* Increased padding for more height */
-    }
-
-    .dropdown-content {
-        position: static;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Darken main content when nav is active */
-    main.active {
-        filter: brightness(0.5);
-        transition: filter 0s ease;
-    }
-
-    .dropdown {
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-
-    .dropdown:active .dropdown-content {
-    display: block;
-    position: absolute}
-
-
-    .dropdown:active .dropbtn {background-color: #00a49e99 ;}
-}
-
 
 
 main {
@@ -300,4 +345,3 @@ footer {
     text-align: center;
     color: rgb(255, 255, 255, 0.5);
 }
-
