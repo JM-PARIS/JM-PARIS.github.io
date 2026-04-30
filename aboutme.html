@@ -32,10 +32,24 @@
             <a href="contact.html">Contact</a>
         </div>
     </li>
-    
+
+    <script>
+    function changeImage() {
+    if (document.getElementById("imgClickAndChange").getAttribute('src') == "/images/picture_me_1.jpg"){
+        document.getElementById("imgClickAndChange").src = "/images/picture_me_2.jpg";
+    } else {
+        document.getElementById("imgClickAndChange").src = "/images/picture_me_1.jpg";
+    }
+    }</script>
+
     <div class="center">
-        <p><img class="roundrect" src="/images/picture_me.jpeg" alt="Picture of Julie-Maï PARIS with a cool hat" width="200"> 
-        </p>
+        <p>
+        <img src="/images/picture_me_1.jpg"
+                style="height: 200px" id="imgClickAndChange" class="roundrect" onclick="changeImage()" alt="Picture of Julie-Maï PARIS on a roof in the middle of a snowy Paris city"  >
+        &nbsp
+        <img class="roundrect" src="/images/picture_me.jpeg" alt="Picture of Julie-Maï PARIS with a cool hat" height="200">
+        </p> 
+
     </div>
     <main>
         <section class="article">
