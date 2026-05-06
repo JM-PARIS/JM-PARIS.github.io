@@ -167,7 +167,7 @@ body {
 }
 
 .header-menu .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 1000px;
 }
 
 .header-menu .menu-btn:checked ~ .menu-icon .navicon {
@@ -294,6 +294,43 @@ a:hover {
 }
 
 .scroll-block h4 {
+    font-family: "Anokha";
+    font-size: 1.5rem;
+    margin-top: 5px; /* Reduce top margin */
+    margin-bottom: 5px; /* Reduce bottom margin */
+    font-weight: normal;
+}
+
+
+/* Not scroll block styles */
+.not-scroll-block {
+    width: auto;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 0px; /* Add padding inside the block */
+    font-size: 1.1em; /* Slightly smaller text */
+    line-height: 1.4; /* Adjust line spacing for readability */
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.not-scroll-block ul {
+    padding-left: 0 px; /* Remove left padding for the list */
+}
+
+.not-scroll-block ul li {
+    list-style: none;
+    margin-bottom: 4px; /* spacing between list items */
+    color: #000; /* Black color for scroll block items */
+}
+
+.not-scroll-block h3 {
+    font-family: "Anokha";
+    margin-top: 5px; /* Reduce top margin */
+    margin-bottom: 5px; /* Reduce bottom margin */
+}
+
+.not-scroll-block h4 {
     font-family: "Anokha";
     font-size: 1.5rem;
     margin-top: 5px; /* Reduce top margin */
