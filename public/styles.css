@@ -367,6 +367,7 @@ a:hover {
     margin: 0; /* Remove default margin */
 }
 
+/* For rounded picture corners */
 .roundrect {
 border-radius: 15px;
 }
