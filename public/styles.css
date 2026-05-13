@@ -270,7 +270,7 @@ a:hover {
     width: auto;
     overflow-y: auto; /* Enable vertical scrolling */
     padding: 0px; /* Add padding inside the block */
-    font-size: 1.1em; /* Slightly smaller text */
+    font-size: 1em; /* Slightly smaller text */
     line-height: 1.4; /* Adjust line spacing for readability */
     margin-left:auto;
     margin-right:auto;
@@ -291,14 +291,19 @@ a:hover {
     font-family: "Anokha";
     margin-top: 5px; /* Reduce top margin */
     margin-bottom: 5px; /* Reduce bottom margin */
+    font-size: 1.3rem;
+    color: #006f6b;
+
 }
 
 .scroll-block h4 {
     font-family: "Anokha";
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-top: 5px; /* Reduce top margin */
     margin-bottom: 5px; /* Reduce bottom margin */
     font-weight: normal;
+    color: #00a49e
+
 }
 
 
@@ -307,7 +312,7 @@ a:hover {
     width: auto;
     overflow-y: auto; /* Enable vertical scrolling */
     padding: 0px; /* Add padding inside the block */
-    font-size: 1.1em; /* Slightly smaller text */
+    font-size: 1em; /* Slightly smaller text */
     line-height: 1.4; /* Adjust line spacing for readability */
     margin-left:auto;
     margin-right:auto;
@@ -326,16 +331,20 @@ a:hover {
 
 .not-scroll-block h3 {
     font-family: "Anokha";
+    font-size: 1.3rem;
     margin-top: 5px; /* Reduce top margin */
     margin-bottom: 5px; /* Reduce bottom margin */
+    color: #006f6b;
+
 }
 
 .not-scroll-block h4 {
     font-family: "Anokha";
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-top: 5px; /* Reduce top margin */
     margin-bottom: 5px; /* Reduce bottom margin */
     font-weight: normal;
+    color: #00a49e
 }
 
 /* News table styles */
@@ -347,16 +356,9 @@ a:hover {
     
 }
 
-.news-table td:first-child {
-  padding-left: 0;
-}
 
-.news-table :last-child {
-  padding-right: 0;
-}
 
 .news-table td h3 {
-    vertical-align: top; /* Align content at the top of the cells */
     padding: 0 5 px; /* Add some padding for better readability */
     margin: 0; /* Remove default margin */
 }
@@ -366,6 +368,14 @@ a:hover {
     padding: 0 5px; /* Add some padding for better readability */
     margin: 0; /* Remove default margin */
 }
+.news-table td:first-child {
+  padding-left: 0;
+}
+
+.news-table :last-child {
+  padding-right: 0;
+}
+
 
 /* For rounded picture corners */
 .roundrect {
