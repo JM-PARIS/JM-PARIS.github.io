@@ -102,7 +102,7 @@
 /* For the slideshow */
 
 * {box-sizing: border-box}
-.mySlides {display: none}
+.mySlides {display: none; transition: width 2s}
 img {vertical-align: middle;}
 
 /* Slideshow container */
